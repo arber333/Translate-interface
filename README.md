@@ -11,5 +11,3 @@ There is also provision to sense temperature from Ampera IGBT module. Regular he
 Isolated voltage reading is exactly the same as johannes new sensor board.
 
 Current sensor connector signals are pulled to GND by 4K7 to remove EMI and there is a 1uF cap for better supply. Also mainboard has to be modified a bit. I add one pulldown 6K8 resistor per channel AFTER 3K3 inline resistor to prepare signal to 1.67V median reading instead of 2.5V usual. This conforms better to 3V3 Olimex chip.
-
-First iteration was meant only to transfer signals and to experiment. It still used old rev. 2 sensor board. However i found out that i could just transfer sensor board functions without large op-amp. And best of all system works without negative attributes to current gain and values.
